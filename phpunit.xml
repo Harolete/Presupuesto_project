@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit    colors = "true"
+            verbose = "true">
+    <testsuites>
+        <testsuite name="">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src</directory>
+            <exclude>
+                <directory suffix=".php">./src/Interfaces</directory>
+                <!-- <directory suffix=".php">./src/Logs</directory> -->
+                <directory suffix=".php">./src/Responders</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+    <logging>
+        <log    type = "coverage-html" target = "./tests/coverage" charset="UTF-8"
+           />
+    </logging>
+</phpunit>

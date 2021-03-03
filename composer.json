@@ -1,0 +1,32 @@
+{
+    "name": "harold/presupuestos_api",
+    "description": "Proyecto para crear una app de presupuestos mensuales y anuales",
+    "authors": [
+        {
+            "name": "Harold Pestano",
+            "email": "haroldpestano@gmail.com"
+        }
+    ],
+    "scripts": {
+        "start": "php -S localhost:8080 public/Index.php",
+        "test": "./vendor/bin/phpunit"
+    },
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/",
+            "Test\\": "tests/",
+            "Config\\": "config"
+        }
+    },
+    "require": {
+        "slim/slim": "*",
+        "slim/psr7": "*",
+        "php-di/php-di": "*",
+        "mongodb/mongodb": "^1.7",
+        "php-di/slim-bridge": "^3.0",
+        "monolog/monolog": "^2.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
